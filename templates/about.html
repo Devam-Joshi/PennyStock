@@ -1,0 +1,42 @@
+{% include 'navbar.html' %}
+{% block body %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="about-container">
+        <div class="inner-boxes flex">
+            <div class="person-container">
+                <img src="{% static 'images/gamer.png' %}" alt="">
+                <h3>Het Tank</h3>
+                <p>Role : Developer</p>
+                <p>Mail : hettank34@gmail.com</p>
+            </div>
+            <div class="person-container">
+                <img src="{% static 'images/gamer.png' %}" alt="">
+                <h3>Devam Joshi</h3>
+                <p>Role : Developer</p>
+                <p>Mail : devamjoshi08@gmail.com</p>
+            </div>
+            <div class="person-container">
+                <img src="{% static 'images/gamer.png' %}" alt="">
+                <h3>Krupal Vyas</h3>
+                <p>Role : Designer</p>
+                <p>Mail : krupalvyas79@gmail.com</p>
+            </div>
+        </div>
+    </div>
+
+    {% include 'footer.html' %}
+</body>
+</html>
+{% endblock body %}
